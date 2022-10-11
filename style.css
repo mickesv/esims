@@ -1,0 +1,108 @@
+
+.frame {
+    border: 1px solid black;
+    min-width: 400px;
+    //max-height: 1000px;
+    border-radius: 5px;
+    width: 90%;
+    align: center;
+    margin: auto;
+}
+
+#titleRow {
+    background-color: blue;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.textArea {
+    background-color: white;
+    color: black;
+    height: 70%;
+    overflow-y: scroll;
+}
+
+
+.textItem {
+    position: relative;
+    background-color: #FBF1C7;
+    width: 90%;
+    margin: 2% 2% 2% 2%;
+    padding: 5px;
+    padding-left: 10px;
+    border-radius: 5px;           
+    color: black;
+}
+
+.textItem.say {
+    background-color: palegreen;
+    margin-bottom: 5%
+}
+
+.textItem.say:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 16px solid palegreen;
+    border-right: 8px solid transparent;
+    border-top: 8px solid palegreen;
+    border-bottom: 12px solid transparent;
+    left: 12px;
+    bottom: -18px;
+}
+
+.textItem.command {
+    background-color: #E5E5EA;
+    margin-bottom: 5%
+}
+
+.textItem.command:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-right: 16px solid #E5E5EA;
+    border-left: 8px solid transparent;
+    border-top: 12px solid #E5E5EA;
+    border-bottom: 12px solid transparent;
+    left: 90%;
+    bottom: -18px;
+}
+
+
+.textItem.tell {
+    background-color: lightblue;
+}
+
+.actionArea {
+    background-color: white;
+    color: black;
+}
+
+.actionItem {
+    background-color: green;
+    color: white;
+}
+
+.actionText  {
+    width: 100%;
+    margin: 2px;
+}
+
+#actionText {
+    width: 79%;
+    height: 2em;
+    margin-left: 2%
+}
+
+#actionSend, #actionHelp {
+    max-width: 8%;
+    background-color: white;
+    border: 0px;
+    font-size: 18px;
+    text-decoration: none;
+}
